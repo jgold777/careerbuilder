@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  city: MyString
+  state: MyString
+  description: MyText
+  requirements: MyText
+  is_active: false
+  is_external: false
+  is_onsite: false
+  compensation: MyString
+  user_id: 1
+
+two:
+  title: MyString
+  city: MyString
+  state: MyString
+  description: MyText
+  requirements: MyText
+  is_active: false
+  is_external: false
+  is_onsite: false
+  compensation: MyString
+  user_id: 1
