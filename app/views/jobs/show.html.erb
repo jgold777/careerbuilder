@@ -16,6 +16,15 @@
 </p>
 
 <p>
+  <strong>Gelocation:</strong>
+  <%= @job.latitude %>
+  <%= @job.longitude %>
+
+</p>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@job.latitude}%2C#{@job.longitude}" %>
+
+
+<p>
   <strong>Description:</strong>
   <%= @job.description %>
 </p>
