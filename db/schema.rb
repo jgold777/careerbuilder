@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124012846) do
+ActiveRecord::Schema.define(version: 20151130011650) do
+
+  create_table "applications", force: :cascade do |t|
+    t.string   "email"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "city"
+    t.string   "state"
+    t.text     "resume"
+    t.text     "cover_letter"
+    t.boolean  "opt_in"
+    t.integer  "job_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false

@@ -3,8 +3,8 @@ class Job < ActiveRecord::Base
 	after_validation :geocode
 	validates_presence_of :city, :state, :description, :title
 	
-	belongs_to :user
-
+	belongs_to 	:user
+	has_many	:applications
 	def city_state
 		"#{city}, #{state}"
 	end
